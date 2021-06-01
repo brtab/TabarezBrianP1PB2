@@ -24,4 +24,15 @@ public class BibliotecaTest {
 		Estudiante nuevo = new Estudiante(apellido, nombre, dni);
 		assertNotNull(nuevo);
 	}
+	
+	@Test
+	public void queSePuedaImprimirUnLibroDeHistoria() {
+		String codigo = "0001";
+		String nombre = "Nombre ejemplo";
+		String autor = "Autor generico";
+		Historia actual = new Historia(codigo, nombre, autor);
+		assertEquals(actual.fotocopiar(), "Imprimiendo Libro de Historia");
+	}
+	
+	
 }
