@@ -1,4 +1,5 @@
 package ar.edu.unlam.pb2.P1;
+import ar.edu.unlam.pb2.P1.enums.*;
 
 public class Libro {
 	
@@ -6,6 +7,7 @@ public class Libro {
 	private String nombre;
 	private String autor;
 	private Boolean disponible;
+	protected TipoDeLibro tipo;
 	
 	public Libro(String codigo, String nombre, String autor) {
 		this.codigo = codigo;
@@ -41,6 +43,14 @@ public class Libro {
 		} else if (!codigo.equals(other.codigo))
 			return false;
 		return true;
+	}
+
+	public TipoDeLibro getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(TipoDeLibro tipo) {
+		this.tipo = tipo;
 	}
 	
 
