@@ -22,6 +22,10 @@ public class Prestamo {
 		return this.activo;
 	}
 	
+	public Libro getLibro() {
+		return this.libro;
+	}
+	
 	public Estudiante getEstudiante() {
 		return this.alumno;
 	}
